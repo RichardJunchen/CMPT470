@@ -1,0 +1,32 @@
+---> Status code for the server's response.
+
+HTTP/1.1 200 OK
+Status code 200
+
+---> If-modified-since
+
+If modified since includes HTTP/1.1 304 Not Modified
+The main difference is the second request does not contain the information about Content-Type, Content-Style-Type, Content-Language.
+
+---> Redirect
+
+Got HTTP/1.1 301 Moved Permanently
+Compared with first request, it has fewer header. The redirect one contain a 'Location' title which indicates the location URL of new web page is. It has a different a Content-Type and Content-Length with the first one. 
+
+
+Command-Line Requests
+
+Using 'curl' and GET without any other instructions will only return the content of the page. (Document type is HTML)
+-I in 'curl' will return the header info instead of the content of the page. Notice that adding the '/' at the end of URL or deleting the '/' at the end of URL will return the different state code. Since the second URL will redirect to the first web page, it will show the state code is moved permanently
+
+http://www.sfu.ca/~ggbaker/470e3/
+--> HTTP/1.1 200 OK
+http://www.sfu.ca/~ggbaker/470e3
+--> HTTP/1.1 301 Moved Permanently
+
+The same result will get in -esS with 'GET' in the situation of adding '/' or deleting '/'. The different between 'curl -I' and 'GET -esS' is the former returns only page header information, while the latter returns both header information and page content. 
+
+
+Developer Tools
+
+I promise I played with the developer tools.

@@ -1,0 +1,53 @@
+body{
+    background-color: #228;
+}
+h1{
+    background-color: white;
+    text-align: center;
+}
+
+#main{
+    background-color: white;
+    padding:5px 15px;
+}
+
+#menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li{
+    background-color: #bbb;
+    display: inline-block;
+    font-size: 20px;
+    margin: 7px 20px 0 20px;
+    padding: 4px;
+    text-align: center;
+}
+
+#menu li a{
+    color: black;
+}
+
+#menu .current{
+    background-color: white;
+}
+
+#main h2{
+    margin: 0;
+}
+#main ul li{
+    font-size: 1.2em;
+}
+p{
+    font-size: 1.2em;
+}
+abbr{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}

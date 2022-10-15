@@ -1,0 +1,32 @@
+{
+  "count": 5,
+  "self": "junchenl",
+  "weights": [
+    {
+      "name": "Junchen Li",
+      "userid": "junchenl",
+      "points": 26
+    },
+    {
+      "name": "Yu Yang Shi",
+      "userid": "yyshi",
+      "points": 18
+    },
+    {
+      "name": "Khorshid Vahidi",
+      "userid": "kvahidi",
+      "points": 10
+    },
+    {
+      "name": "BENNY ZHAO",
+      "userid": "bennyz",
+      "points": 26
+    },
+    {
+      "name": "Jayasurya anirudh Tatikonda",
+      "userid": "jtatikon",
+      "points": 20
+    }
+  ],
+  "comments": ""
+}

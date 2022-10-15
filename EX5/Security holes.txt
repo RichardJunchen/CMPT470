@@ -1,0 +1,18 @@
+1. When we try to add new person, there is a XSS security hole in the "Notes" area. Example: if we try to enter "My comment is <script>alert('foo')</script>", the exactly output is just "My comment is" which means it allows unescaped javascript(few HTML tags). And when we try to click the new people that we added, it will run the javascript code and alert the user. That's not what creater want.
+
+2. For example, When we want to check the friends that shared their contacts with user1, there is only user2 share him information. However, when we click the user2, the URL shows "https://ggbaker.ca/security/friends/user2/". We can easily change the "user2" to any user's name which means we shouldn't do that. This is a insufficient authentication problem. 
+
+3. This is second insufficient authentication iuuse. When we look at the contackts people information, the URL shows "https://ggbaker.ca/security/people/greg-baker/". If we know the other people name, we can easily view his information even his not my contact people. "https://ggbaker.ca/security/people/some-name-we-want-to-peep/".
+
+4. CSRF problem, When we try to add a new person in any person main page, we should use generate a random token as the value in the post action. Since we checked the code, 
+"<form action="/security/people/new" method="post"><div style='display:none'><input type='hidden' name='owner_id' value='4' /></div>"
+We shouldn't use the integer as the value.
+
+5. CSRF problem, When we try to edit the person information, the HTML will show the value of post action is a numbeer instead of a random token. 
+"<form action="/security/people/13213-123/edit" method="post"><div style='display:none'><input type='hidden' name='owner_id' value='2' /></div>"
+We shouldn't use the integer as the value.
+
+
+6. When we logout the page it will show "500 Internal Server Error". This error is usually returned by the server when no other error code is suitable. It could be a SQL injection.
+
+7. We can not open two pages with the different people. One page login with "user1" and other page login with "user2". When we want to refresh the page or do any operation on that page, it will automatically jump to the last login page. The same page cannot exist for two different users.
