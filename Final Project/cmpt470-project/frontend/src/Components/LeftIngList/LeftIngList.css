@@ -1,0 +1,58 @@
+.Ing-title {
+    font-size: 1.5em;
+    color: white;
+}
+
+.UnorderedList {
+    margin: 12px;
+}
+
+.UnorderedList li{
+    background-color: rgb(255, 255, 255);
+    color:black;
+    list-style-type:none;
+    border-radius: 6px;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 5px 0 5px 0;
+}
+
+.span1 {
+    margin:auto;
+    color: rgb(126, 126, 126);
+}
+
+button{
+    border: none;
+    color: black;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.delete-button {
+    background-color: #ff1100;
+    color: black;
+}
+
+.delete-button:hover{
+    background-color: #ff584d; 
+    color: black; 
+}
+
+.search-button {
+    background-color: rgb(180, 180, 179);
+    border-radius: 2px;
+}
+
+.search-button:hover {
+    background-color: rgb(150, 150, 150);
+    border-radius: 2px;
+}
+

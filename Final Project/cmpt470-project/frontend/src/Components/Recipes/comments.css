@@ -1,0 +1,128 @@
+.comments {
+  color: rgb(226, 224, 110);
+}
+
+.comments-title {
+  font-size: 30px;
+  color: white;
+}
+
+.comments-container {
+  margin-top: 40px;
+  margin-left: 5%;
+}
+
+.comment-form-title {
+  font-size: 22px;
+}
+
+.comment-form-textarea {
+  width: 80%;
+  height: 80px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  margin-left: 10%;
+  border: 5px solid rgb(98, 175, 175);
+}
+.name_title{
+  margin-right:43%;
+  font-size: 22px;
+  color: rgb(226, 224, 110);
+}
+.comment-form-name {
+  width: 30%;
+  height: 30px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  margin-left: 10%;
+  border: 5px solid rgb(118, 98, 175);
+}
+
+.comment-form-button {
+  font-size: 16px;
+  padding: 8px 16px;
+  background: rgb(59, 130, 246);
+  border-radius: 8px;
+  color: white;
+}
+
+.comment-form-button:hover:enabled {
+  cursor: pointer;
+  background: rgb(37, 99, 235);
+}
+
+.comment-form-button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.comment-form-cancel-button {
+  margin-left: 10px;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.comment-image-container {
+  margin-right: 12px;
+}
+
+.comment-image-container img {
+  border-radius: 50px;
+}
+
+.comment-right-part {
+  width: 100%;
+}
+
+.comment-content {
+  display: flex;
+}
+
+.comment-author {
+  margin-right: 8px;
+  font-size: 20px;
+  color: rgb(59, 130, 246);
+}
+
+.comment-text {
+  font-size: 18px;
+  color: white;
+  float: left;
+  margin-top: -2%;
+}
+
+.comment-actions {
+  display: flex;
+  font-size: 12px;
+  color: rgb(175, 224, 142);
+  font-weight: 900;
+  cursor: pointer;
+  margin-right: -1px;
+}
+
+.comment-action {
+  margin-right: 8px;
+}
+
+.comment-action:hover {
+  text-decoration: underline;
+}
+
+.replies {
+  margin-top: 20px;
+}
+
+.user-icon {
+  background: url("../Recipes/user-icon.png");
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  line-height: 0;
+  text-align: center;
+  background-size: 100% 100%;
+  background-position: center center;
+  overflow: auto;
+}

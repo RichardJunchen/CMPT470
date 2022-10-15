@@ -1,0 +1,14 @@
+.right {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    background: url("../../image/background2.jpeg") no-repeat;
+    background-size:cover;
+    background-position: center center;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.App-title{
+    margin-top: 2%;
+}

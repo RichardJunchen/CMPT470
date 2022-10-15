@@ -1,0 +1,98 @@
+/* For each item*/
+.each {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1);
+    height: 120px;
+    background-color: white;
+}
+.each_image {
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    width: 50%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+.third {
+    overflow: hidden;
+    width: 100%;
+    padding: 15px;
+}
+.product-item-img {
+    position: absolute;
+    left: -999px;
+    top: -999px;
+    right: -999px;
+    bottom: -999px;
+    height: 100%;
+    max-width: none;
+    margin: auto;
+}
+
+.Right_background{
+    width: 95%;
+    margin-left: 3%;
+    background: url("../../image/back.png") no-repeat ;
+    background-size: 100% 100%;
+    background-position: center center;
+    overflow: auto;
+}
+.page_left{
+    width: 50%;
+    float: left;
+}
+.EachTitle{
+    font-size: 30px;
+    /* margin-right: 50%; */
+    background-color: rgb(174, 248, 171);
+}
+.Each_description{
+    padding: 20px;
+    height: 40%;
+    text-align: left;
+    margin-left: 4%;
+}
+
+.List_Of_Ingredient{
+    width: 50%;
+    margin-left: 25%;
+
+}
+.title_Of_Ingredient{
+    /* width: 50%; */
+    color: rgb(255, 47, 47);
+    margin-left: 5%;
+}
+.title_Of_Step{
+    width: 50%;
+    color: rgb(255, 47, 47);
+}
+
+.page_right{
+    width: 50%;
+    float: right;
+}
+.List_Of_Step{
+    text-align:left;
+}
+.list{
+    list-style:square;
+}
+.back_button{
+    float: left;
+    padding: 0.5%;
+    font-size: 50%;
+    border: 5px solid rgb(89, 0, 255);
+}
+.recipe_Photo{
+    margin-top: 5%;
+}
+.List_Of_details{
+    margin-left: 3%;
+    text-align:center;
+}
